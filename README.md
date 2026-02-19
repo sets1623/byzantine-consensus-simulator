@@ -7,7 +7,7 @@ This project models honest and malicious nodes, message passing, and consensus b
 
 ## 📌 Overview
 
-Distributed systems must operate correctly even when some nodes fail or act maliciously.  
+Distributed systems must continue functioning correctly even when some nodes fail or act maliciously.  
 Such failures are known as **Byzantine faults**.
 
 The **Byzantine Consensus Simulator** provides a controlled environment to:
@@ -16,7 +16,7 @@ The **Byzantine Consensus Simulator** provides a controlled environment to:
 - Validate theoretical fault-tolerance limits
 - Understand real-world distributed consensus challenges
 
-This project is designed for **education, research, and experimentation**.
+Designed for **education, research, and experimentation**.
 
 ---
 
@@ -28,7 +28,7 @@ This project is designed for **education, research, and experimentation**.
 - Consensus decision validation
 - Fault tolerance threshold testing
 - Deterministic and randomized simulations
-- Modular, extensible architecture
+- Modular and extensible architecture
 
 ---
 
@@ -45,3 +45,17 @@ This project is designed for **education, research, and experimentation**.
 
 ## 🏗️ Project Structure
 
+```text
+byzantine-consensus-simulator/
+│
+├── src/
+│   ├── node.py          # Defines honest and Byzantine node behavior
+│   ├── consensus.py    # Implements consensus logic and decision rules
+│   └── network.py      # Simulates message passing between nodes
+│
+├── simulations/
+│   └── test_cases.py   # Byzantine failure and attack scenarios
+│
+├── main.py             # Simulation entry point
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
